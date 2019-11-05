@@ -15,6 +15,7 @@ var RootCmd = &cobra.Command{
 			return err
 		}
 		s.Run(port)
+		cmd.AddCommand(DbCmd())
 		return nil
 	},
 }
